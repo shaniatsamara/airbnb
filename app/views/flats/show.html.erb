@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="banner">
+    <img src="<%= @flat.url %>" alt="A picture of <%= @flat.name %>">
+  </div>
+  <div class="content-container"></div>
+    <div class="left-content"></div>
+      <div class="box-1">
+        <h1><%= @flat.name %></h1>
+        <p><% @flat.address %></p>
+      </div>
+      <div class="box-2">
+        <h2>A bit more about this flat..</h2>
+        <p><%= @flat.description %>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="box-3">
+        <h4>Book this place!</h4>
+        <p>From:</p>
+        <p>To:</p>
+        <button> Book! </button>
+      </div>
+      <div class="box-4">
+        <h3>Details</h3>
+        <div class="details">
+          <i class="fas fa-user-friends"></i>
+          <p> <%=  flat.number_of_guests %> </p>
+          <i class="fab fa-btc"></i>
+          <p> <%=  flat.price_per_night %> </p>
+        </div>
+      </div>
+      <div class="box-5">
+        <div class="share-options">
+          <h5>Share</h5>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-pinterest-square"></i>
+          <i class="fas fa-envelope-square"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

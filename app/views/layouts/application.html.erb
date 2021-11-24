@@ -8,9 +8,14 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   </head>
 
   <body>
+    <div class="navbar">
+      <h2>Simple Airbnb</h2>
+      <%= link_to "Add Flat", new_flat_path %>
+    </div>
     <%= yield %>
   </body>
 </html>
